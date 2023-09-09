@@ -16,11 +16,11 @@ int main(void)
 		putchar(c);
 		c++;
 	}
-	while (ch <= "Z")
+	while (ch <= 'Z')
 	{
 		putchar(ch);
 		ch++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }

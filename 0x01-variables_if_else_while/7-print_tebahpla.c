@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success)
 */
-int main(void)
+int main(void)i
 {
 	char c = 'z';
 
@@ -15,6 +15,6 @@ int main(void)
 		putchar(c);
 		c--;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }

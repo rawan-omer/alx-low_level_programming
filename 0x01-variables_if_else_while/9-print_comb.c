@@ -8,13 +8,16 @@
 */
 int main(void)
 {
-	int i = 48;
+	int i = 0;
 
-	while (i <= 57)
+	while (i <= 9)
 	{
-		putchar(i);
-		putchar(, );
-		putchar("\n");
+		putchaR(i + 48);
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		i++;
 	}
 	return (0);
