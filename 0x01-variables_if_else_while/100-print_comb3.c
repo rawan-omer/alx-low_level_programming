@@ -12,19 +12,21 @@ int main(void)
 
 	for (r = '0'; r < '9'; r++)
 	{
-	for (s = r + 1; s < '10'; s++)
-	{
-	if (r != s)
-	{
-	putchar(r);
-	putchar(s);
-	if (r == '8' && s == '9')
-	continue;
-	putchar(',');
-	putchar(' ');
-	}
-	}
+		for (s = r + 1; s < '10'; s++)
+		{
+			if (r != s && r > s)
+			{
+				putchar(r);
+				putchar(s);
+				if (r != '8' && s != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 	}
 	putchar('\n');
+
 	return (0);
 }
