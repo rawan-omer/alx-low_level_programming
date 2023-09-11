@@ -10,22 +10,24 @@ int main(void)
 {
 	int r = 0, s;
 
-	while (r < '9')
+	while (r < 9)
 	{
 		s = 0;
-		while (s <= '9')
+		while (s <= 9)
 		{
-			if (r != s && r > s)
+			if (r != s && r < s)
 			{
-				putchar(r);
-				putchar(s);
-				if (r != '8' && s != '9')
+				putchar(r + 48);
+				putchar(s + 48);
+				if (r != 8 && s != 9)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-			}s++;
-		}r++;
+			}
+			s++;
+		}
+		r++;
 	}
 	putchar('\n');
 
