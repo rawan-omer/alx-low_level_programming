@@ -18,7 +18,7 @@ int main(void)
 	{
 	putchar(r);
 	putchar(s);
-	if (r == 8 && s ==9)
+	if (r == 8 && s == 9)
 	continue;
 	putchar(',');
 	putchar(' ');
@@ -28,4 +28,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-	
