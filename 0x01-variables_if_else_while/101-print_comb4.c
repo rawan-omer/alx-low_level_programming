@@ -22,7 +22,7 @@ int main(void)
 					putchar(r + 48);
 					putchar(s + 48);
 					putchar(o + 48);
-					if (r + s + O != 24)
+					if (r + s + o != 24)
 					{
 						putchar(',');
 						putchar(' ');
