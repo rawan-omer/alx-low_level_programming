@@ -19,23 +19,29 @@ void print_times_table(int n)
 			{
 				mul = r * s;
 				if (mul <= 9)
+				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(mul + 48);
+				}
 				else if (mul <= 99)
+				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar((mul / 10) + 48);
 					_putchar((mul % 10) + 48);
+				}
 				else
+				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar((mul / 100) + 48);
 					_putchar((mul / 10) + 48);
 					_putchar((mul % 10) + 48);
+				}
 			}
 		}
 		_putchar('\n');
