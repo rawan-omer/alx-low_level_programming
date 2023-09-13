@@ -1,10 +1,11 @@
-#include"main.h"
+#include "main.h"
+
 /**
- * _isalpha - function to check if character is a letter
+ * _isalpha - check if character is a letter
  *
  * @c: takes input from other function
  *
- * Return: returns 1 is c is true else 0
+ * Return: 1 is c is true else 0
 */
 
 int _islower(int c)
