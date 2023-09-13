@@ -34,12 +34,12 @@ void print_times_table(int n)
 					_putchar((mul / 10) + 48);
 					_putchar((mul % 10) + 48);
 				}
-				else
+				else if (mul > 99)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar((mul / 100) + 48);
-					_putchar((mul / 10) + 48);
+					_putchar(((mul / 10) % 10) + 48);
 					_putchar((mul % 100) + 48);
 				}
 			}
