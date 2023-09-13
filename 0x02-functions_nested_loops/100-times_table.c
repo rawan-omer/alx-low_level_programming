@@ -40,7 +40,7 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar((mul / 100) + 48);
 					_putchar(((mul / 10) % 10) + 48);
-					_putchar((mul % 100) + 48);
+					_putchar((mul % 10) + 48);
 				}
 			}
 			_putchar('\n');
