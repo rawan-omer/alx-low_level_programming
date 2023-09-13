@@ -16,6 +16,7 @@ void print_times_table(int n)
 		{
 			_putchar(48);
 			for (s = 1; s <= n; s++)
+			{
 				mul = r * s;
 				if (mul <= 9)
 					_putchar(',');
@@ -35,6 +36,7 @@ void print_times_table(int n)
 					_putchar((mul / 100) + 48);
 					_putchar((mul / 10) + 48);
 					_putchar((mul % 10) + 48);
+			}
 		}
 		_putchar('\n');
 	}
