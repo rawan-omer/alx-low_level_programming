@@ -21,7 +21,7 @@ int main(void)
 				break;
 			}
 			s = n / i;
-			n = d;
+			n = s;
 		}
 	}
 	return (0);
