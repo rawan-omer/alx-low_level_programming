@@ -12,10 +12,10 @@ void rev_string(char *s)
 
 	for (l = 0; s[l] != '\0'; l++)
 		;
-	for (i = 0; i < l; i++)
+	for (i = 0; i < l / 2; i++)
 	{
 		t = s[i];
-		s[i] = s[l - 1];
-		s[l - 1] = t;
+		s[i] = s[l - 1 - i];
+		s[l - 1 - i] = t;
 	}
 }
