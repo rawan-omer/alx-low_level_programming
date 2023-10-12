@@ -21,9 +21,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(arg, n);
 	if (n > 0)
 		printf("%s", va_arg(arg, char *));
-	p = va_arg(arg, char *);
+
 	for (i = 1; i < n; i++)
 	{
+		p = va_arg(arg, char *);
 		if (p == NULL)
 			p = "(nil)";
 		printf("%s%s", s, p);
