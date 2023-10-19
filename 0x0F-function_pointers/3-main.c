@@ -25,5 +25,6 @@ int main(int argc, char *argv[])
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && !y)
 		printf("Error\n"), exit(100);
 	printf("%d\n", res(x, y));
+
 	return (0);
 }
